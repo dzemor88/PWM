@@ -1,0 +1,17 @@
+{
+    "theme_color": "#acdedf",
+    "background_color": "#226b65",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/PWM/",
+    "name": "Testowa Nazwa",
+    "short_name": "TNAPP",
+    "description": "Testowy opis",
+    "icons": [
+        {
+            "src": "./icon-512x512",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
