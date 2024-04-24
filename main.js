@@ -13,6 +13,7 @@ const clouds = document.querySelector('.clouds');
 const visibilty = document.querySelector('.visibilty');
 const aqiDisplay = document.querySelector('.aqi');
 
+
 const apiLink = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const apiKey = '&appid=65e525b678aadd227ebca31192f8550e';
 const apiUnits = '&units=metric';
