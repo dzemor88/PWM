@@ -56,7 +56,7 @@ function updateWeatherInfo(data) {
     pressure.textContent = `${data.main.pressure} hPa`;
     windSpeed.textContent = `${data.wind.speed} m/s`;
     clouds.textContent = `${data.clouds.all} %`;
-    visibilty.textContent = `${data.visibilty / 1000} km`;
+    visibilty.textContent = `${data.visibility / 1000} km`;
 }
 
 function getAirQuality(lat, lon) {
@@ -66,7 +66,7 @@ function getAirQuality(lat, lon) {
 
 function updateAQIDisplay(aqiData) {
     const aqi = aqiData.list[0].main.aqi;
-    aqiDisplay.textContent = `Jakość powietrza (AQI): ${['Good', 'Fair', 'Moderate', 'Poor', 'Very Poor'][aqi - 1]}`;
+    aqiDisplay.textContent = `${['Dobra', 'Umiarkowana', 'Niezdrowe dla wrażliwych grup', 'Niezdrowy ', 'Bardzo niezdrowe'][aqi - 1]}`; //poziomy jakości ze strony https://www.iqair.com/pl/newsroom/what-is-aqi
 }
 
 const getWeatherByEnter = (e) => {
