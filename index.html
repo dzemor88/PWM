@@ -13,42 +13,44 @@
 </head>
 
 <body style="background-color:powderblue;">
-    <header>
-        <h1>Aplikacja Pogodwa</h1>
-    </header>
-    <main>
-        <section class="serarch">
-            <input type="text" placeholder="podaj nazwę miasta">
-            <button>Sprawdź pogodę</button>
-            <p class="error"></p>
-        </section>
-        <section class="app">
-            <h2 class="city"></h2>
-            <div class="weather">
-                <div class="weather_info">
-                    <img src="" alt="" class="weather_image">
+    <div class="fullWidth">
+        <header>
+            <h1>Aplikacja Pogodwa</h1>
+        </header>
+        <main>
+            <section class="serarch">
+                <input type="text" placeholder="podaj nazwę miasta">
+                <button>Sprawdź pogodę</button>
+                <p class="error"></p>
+            </section>
+            <section class="app">
+                <h2 class="city"></h2>
+                <div class="weather">
+                    <div class="weather_info">
+                        <img src="" alt="" class="weather_image">
+                    </div>
+                    <p class="description"></p>
                 </div>
-                <p class="description"></p>
-            </div>
-            <p>Temperatura: <span class="temp"></span></p>
-            <p>Temperatura odczuwalna: <span class="feel_like"></span></p>
-            <p>Wilgotność: <span class="humidity"></span></p>
-            <p>Ciśnienie: <span class="pressure"></span></p>
-            <p>Prędkość Wiatru: <span class="wind_speed"></span></p>
-            <p>Zachmurzenie: <span class="clouds"></span></p>
-            <p>Widoczność: <span class="visibilty"></span></p>
+                <p>Temperatura: <span class="temp"></span></p>
+                <p>Temperatura odczuwalna: <span class="feel_like"></span></p>
+                <p>Wilgotność: <span class="humidity"></span></p>
+                <p>Ciśnienie: <span class="pressure"></span></p>
+                <p>Prędkość Wiatru: <span class="wind_speed"></span></p>
+                <p>Zachmurzenie: <span class="clouds"></span></p>
+                <p>Widoczność: <span class="visibilty"></span></p>
 
-        </section>
-        <section>
-            <img src="original.jpg" width="333" height="200">
-        </section>
-    </main>
-    <footer>
-        <p>Projekt WSB Merito Gdańsk 2024</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <script src="./main.js"></script>
-    <script src="./sw.js"></script>
+            </section>
+            <section>
+                <img src="original.jpg" width="333" height="200">
+            </section>
+        </main>
+        <footer>
+            <p>Projekt WSB Merito Gdańsk 2024</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+        <script src="./main.js"></script>
+        <script src="./sw.js"></script>
+    </div>
 </body>
 
 </html>
