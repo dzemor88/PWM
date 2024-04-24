@@ -56,7 +56,7 @@ function updateWeatherInfo(data) {
     pressure.textContent = `${data.main.pressure} hPa`;
     windSpeed.textContent = `${data.wind.speed} m/s`;
     clouds.textContent = `${data.clouds.all} %`;
-    visibility.textContent = `${data.visibility / 1000} km`;
+    visibilty.textContent = `${data.visibilty / 1000} km`;
 }
 
 function getAirQuality(lat, lon) {
